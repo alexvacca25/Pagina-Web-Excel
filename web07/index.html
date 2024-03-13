@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+<div class="card">
+    <div class="card-header">
+      <h2>Fecha máxima de recepción de trabajos</h2>
+    </div>
+    <div class="card-body">
+      <img src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg" alt="Imagen de referencia">
+      <p>Fecha límite: <span id="fecha-limite"></span></p>
+    </div>
+  </div>
+  <script>
+    // Definir la fecha límite
+    var fechaLimite = new Date('2024-03-16');
+    // Formatear la fecha en formato legible
+    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+    var fechaFormateada = fechaLimite.toLocaleDateString('es-ES', options);
+    // Mostrar la fecha en el elemento HTML correspondiente
+    document.getElementById('fecha-limite').innerText = fechaFormateada;
+    </script>
+</body>
+</html>

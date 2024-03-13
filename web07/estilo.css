@@ -1,0 +1,29 @@
+.card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    padding: 20px;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
